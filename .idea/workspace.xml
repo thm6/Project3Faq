@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfaed948-950b-4dac-b74b-235225466984" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5a9de7f0-3fb9-4edf-a02d-5a7cebc48a5e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <list id="1a55a071-e585-4d08-a031-7e5c08617b15" name="Revert &quot;Added UserProfile migration, model, and updated the UserSeeder to create Profiles.&quot;" comment="Revert &quot;Added UserProfile migration, model, and updated the UserSeeder to create Profiles.&quot;&#10;&#10;This reverts commit cb04c86d" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+            <state relative-caret-position="180">
+              <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -216,10 +222,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="50" />
-    <option name="y" value="20" />
-    <option name="width" value="1278" />
-    <option name="height" value="638" />
+    <option name="x" value="85" />
+    <option name="y" value="95" />
+    <option name="width" value="1121" />
+    <option name="height" value="553" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -305,7 +311,7 @@
       <workItem from="1555641289475" duration="5921000" />
       <workItem from="1555724721066" duration="2641000" />
       <workItem from="1555728381779" duration="5917000" />
-      <workItem from="1555810028200" duration="14487000" />
+      <workItem from="1555810028200" duration="15303000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Laravel Setup">
       <created>1555557089132</created>
@@ -437,7 +443,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40013000" />
+    <option name="totallyTimeSpent" value="40829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,7 +471,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.6120642" weight="0.3271028" />
       <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.4997233" weight="0.32881773" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49886277" visible="true" weight="0.44080997" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49886277" visible="true" weight="0.31308413" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5011372" side_tool="true" weight="0.4194978" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -904,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+        <state relative-caret-position="180">
+          <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
         </state>
       </provider>
     </entry>
