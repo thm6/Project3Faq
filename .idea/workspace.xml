@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="dfaed948-950b-4dac-b74b-235225466984" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/5a9de7f0-3fb9-4edf-a02d-5a7cebc48a5e.xml" afterDir="false" />
@@ -10,6 +11,9 @@
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
+=======
+    <list default="true" id="dfaed948-950b-4dac-b74b-235225466984" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <list id="1a55a071-e585-4d08-a031-7e5c08617b15" name="Revert &quot;Added UserProfile migration, model, and updated the UserSeeder to create Profiles.&quot;" comment="Revert &quot;Added UserProfile migration, model, and updated the UserSeeder to create Profiles.&quot;&#10;&#10;This reverts commit cb04c86d" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -312,6 +316,12 @@
       <workItem from="1555724721066" duration="2641000" />
       <workItem from="1555728381779" duration="5917000" />
       <workItem from="1555810028200" duration="15303000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1555877597506" duration="4507000" />
+      <workItem from="1555898242168" duration="1062000" />
+      <workItem from="1555899735634" duration="1443000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Initial Laravel Setup">
       <created>1555557089132</created>
@@ -443,7 +453,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="40829000" />
+=======
+    <option name="totallyTimeSpent" value="48261000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
