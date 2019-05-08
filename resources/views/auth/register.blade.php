@@ -47,8 +47,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <label for="role" class="col-md-4 control-label">Role</label>
+
+                            <div class="col-md-16">
+                                <select class="form-control" name="role">
+                                    <option value="admin">Admin</option>
+                                    <option value="super_admin">Super Admin</option>
+                                    <option value="member">Member</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-6 offset-md-5">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>

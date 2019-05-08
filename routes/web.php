@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -34,6 +36,23 @@ Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@d
 Route::resources([
     'questions' => 'QuestionController',
 ]);
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', function ()
+{
+    $user = (new App\User)->find(1);
+    (new App\User)->find(1)->notify(new \App\Notifications\AnsweredaQuestion());
+    return view('welcome');
+});
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
+{
+    Route::match(['get', 'post'], '/adminOnlyPage/', 'HomeController@admin');
+});
+Route::group(['middleware' => 'App\Http\Middleware\MemberMiddleware'], function()
+{
+    Route::match(['get', 'post'], '/memberOnlyPage/', 'HomeController@member');
+});
+Route::group(['middleware' => 'App\Http\Middleware\SuperAdminMiddleware'], function()
+{
+    Route::match(['get', 'post'], '/superAdminOnlyPage/', 'HomeController@super_admin');
+});

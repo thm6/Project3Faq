@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -56,6 +58,25 @@
                         <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                     @else
+
+                        <li><a href="#"></a></li>
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <span class="caret"></span> <i class="fa fa-bell"></i>
+                                <span class="badge badge-light">{{auth()->user()->notifications->count()}}</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                @foreach (auth()->user()->notifications as $notification) {
+                                <li><a href ="#">{{$notification->data['data']}}</a></li>}
+                                @endforeach
+
+                            </ul>
+
+                        </li>
+
+
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 My Account <span class="caret"></span>

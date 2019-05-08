@@ -3,6 +3,16 @@
 
 @section('content')
     <div class="container">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Dashboard</div>
+            <div class="panel-body">
+
+                You are logged in! as <strong>{{ strtoupper(Auth::user()->role) }}</strong>
+
+            </div>
+        </div>
+
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
