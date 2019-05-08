@@ -63,16 +63,9 @@
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 <span class="caret"></span> <i class="fa fa-bell"></i>
-                                <span class="badge badge-light">{{auth()->user()->notifications->count()}}</span>
+                                <span class="badge badge-light">1</span>
                             </a>
 
-                            <ul class="dropdown-menu">
-
-                                @foreach (auth()->user()->notifications as $notification) {
-                                <li><a href ="#">{{$notification->data['data']}}</a></li>}
-                                @endforeach
-
-                            </ul>
 
                         </li>
 

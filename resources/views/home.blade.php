@@ -8,7 +8,7 @@
             <div class="panel-heading">Dashboard</div>
             <div class="panel-body">
 
-                You are logged in! as <strong>{{ strtoupper(Auth::user()->role) }}</strong>
+                Login Successfully! <strong>{{ strtoupper(Auth::user()->role) }}</strong>
 
             </div>
         </div>
@@ -16,9 +16,9 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Questions
+                    <div class="card-header">Have a Question?
                         <a class="btn btn-primary float-right" href="{{ route('questions.create') }}">
-                            Create a Question
+                            Ask a Question
                         </a>
 
                         <div class="card-body">
@@ -48,7 +48,7 @@
                                         </div>
                                     </div>
                                 @empty
-                                    There are no questions to view, you can  create a question.
+                                    You got any questions? Try asking a new one!
                                 @endforelse
 
 
