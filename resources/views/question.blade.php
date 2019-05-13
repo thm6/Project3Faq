@@ -14,6 +14,7 @@
                     <div class="card-footer">
                         <a class="btn btn-primary float-right"
                            href="{{ route('questions.edit',['id'=> $question->id])}}">
+
                             Edit Question
                         </a>
 
@@ -35,6 +36,13 @@
                     <div class="card-body">
                         @forelse($question->answers as $answer)
                             <div class="card">
+
+
+                                <div class="card">
+                                    Votes: {{$answer->votes}}
+                                </div>
+
+
                                 <div class="card-body">{{$answer->body}}</div>
                                 <div class="card-footer">
 
@@ -51,9 +59,9 @@
                                 <div class="card-body"> No Answers</div>
                             </div>
                         @endforelse
-
-
                     </div>
                 </div>
+            </div>
+        </div>
             </div>
 @endsection

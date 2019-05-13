@@ -8,7 +8,7 @@
             <div class="panel-heading">Dashboard</div>
             <div class="panel-body">
 
-                Login Successfully! <strong>{{ strtoupper(Auth::user()->role) }}</strong>
+                Login Successfully as <strong>{{ strtoupper(Auth::user()->role) }}</strong>
 
             </div>
         </div>
