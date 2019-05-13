@@ -5,8 +5,12 @@
         <div class="row ">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Question</div>
+                        <div class="card-header">Question
+                            <large class="text-muted">
+                                Votes: {{$question->votes}}
+                            </large>
 
+                    </div>
                     <div class="card-body">
 
                         {{$question->body}}
@@ -39,7 +43,9 @@
 
 
                                 <div class="card">
-                                    Votes: {{$answer->votes}}
+                                    <large class="text-muted">
+                                        Votes: {{$answer->votes}}
+                                    </large>
                                 </div>
 
 
