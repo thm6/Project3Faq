@@ -21,14 +21,12 @@
                         {!! Form::close() !!}
 
                         {{ Form::open(['method'  => 'patch', 'route' => ['answers.downvote', $question, $answer->id]])}}
-                        <button class="btn btn-dark float-right mr-2" value="submit" type="submit" id="submit">Vote down
+                        <button class="btn btn-dark float-right mr-2" value="submit" type="submit" id="submit">Vote-down
                         </button>
                         {!! Form::close() !!}
 
-
-
                         {{ Form::open(['method'  => 'patch', 'route' => ['answers.upvote', $question, $answer->id]])}}
-                        <button class="btn btn-warning float-right mr-2" value="submit" type="submit" id="submit">Vote up
+                        <button class="btn btn-warning float-right mr-2" value="submit" type="submit" id="submit">Vote-up
                         </button>
                         {!! Form::close() !!}
 

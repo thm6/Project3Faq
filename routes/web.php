@@ -34,6 +34,8 @@ Route::patch('/questions/{question_id}/answer/{answer_id}', 'AnswerController@up
 
 Route::patch('/questions/{question_id}/answer/{answer_id}/vote_up', 'AnswerController@upvote')->name('answers.upvote');
 Route::patch('/questions/{question_id}/answer/{answer_id}/vote_down', 'AnswerController@downvote')->name('answers.downvote');
+Route::patch('/questions/{question_id}/vote_up', 'QuestionController@upvote')->name('questions.upvote');
+Route::patch('/questions/{question_id}/vote_down', 'QuestionController@downvote')->name('questions.downvote');
 
 Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@destroy')->name('answers.destroy');
 

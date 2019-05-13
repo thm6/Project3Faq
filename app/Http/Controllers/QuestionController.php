@@ -105,4 +105,22 @@ class QuestionController extends Controller
         $question->delete();
         return redirect()->route('home')->with('message', 'Deleted');
     }
+
+    public function upvote(Request $request, $question)
+    {
+        $question = Question::find($question);
+        $question->votes = ($question->votes + 1);
+        $question->save();
+        return redirect()->route('questions.show',['question_id' => $question])->with('message', 'Up-voted');
+    }
+    public function downvote(Request $request, $question)
+    {
+        $question = Question::find($question);
+        $question->votes = ($question->votes - 1);
+        $question->save();
+        return redirect()->route('questions.show',['question_id' => $question])->with('message', 'Down-voted');
+    }
+
+
+
 }
