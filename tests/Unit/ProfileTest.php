@@ -13,12 +13,12 @@ class profileTest extends TestCase
      *
      * @return void
      */
-    public function testSave()
+
+    public function testExample()
     {
-        $user = factory(\App\User::class)->make();
-        $user->save();
-        $profile = factory(\App\Profile::class)->make();
-        $profile->user()->associate($user);
-        $this->assertTrue($profile->save());
+        $this->assertTrue(true);
     }
 }
+
+
+
