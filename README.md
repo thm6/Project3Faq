@@ -59,7 +59,7 @@ Once a question is answered, the user will be notified the question is notified 
 
 **Link to Heroku Application**
  This appliction will work until when the user account is created and then heroku website is showing a database error 
- Link to heroku app: https://is601faqmp3.herokuapp.com
+ Link to heroku app: https://is601finalprojectfaq.herokuapp.com/
  
  **Website for working Demo Video**
  Link to demo video on youtube:https://youtu.be/ElwqQTunbvE
